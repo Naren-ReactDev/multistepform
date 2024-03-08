@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  background-color: hsl(217, 100%, 97%)
+}
+
+input {
+  border-radius: 4px;
+  height: 34px;
+  width: 380px;
+  border: solid 1px;
+  border-color: hsl(231, 11%, 63%);
+  margin-bottom: 20px;
+  margin-top: 5px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.mainBody {
+  display: flex;
+  justify-content: center;
+  margin-top: 3.5vh;
+}
+
+.main {
+  width: 920px;
+  height: 600px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.leftNavBar {
+  width: 274px;
+  margin-right: 15px;
+  background-image: url('./images/bg-sidebar-desktop.svg');
+  background-repeat: no-repeat;
+  padding-top: 50px;
+}
+
+.rightSection {
+  width: 600px;
+  height: 570px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+}
+
+.leftNavBar,
+.rightSection {
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.leftNavItem {
+  display: flex;
+  margin-left: 50px;
+  margin-bottom: 20px;
+
+}
+
+.stepNum {
+  border: solid white 1px;
+  height: 25px;
+  width: 25px;
+  align-self: center;
+  border-radius: 20px;
+  margin-right: 15px;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.highlightStep {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(243, 100%, 62%)
+}
+
+.text1 {
+  font-weight: 400;
+  font-size: 11px;
+  color: hsl(229, 24%, 87%);
+
+}
+
+.text2 {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-size: 13px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.nextStepButton {
+  border-radius: 8px;
+  height: 40px;
+  width: 100px;
+  background-color: hsl(213, 96%, 18%);
+  margin-bottom: 20px;
+  color: hsl(0, 0%, 100%);
+}
+
+.backButton {
+  border: 0px;
+  height: 40px;
+  width: auto;
+  background-color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 13px;
+  color: hsl(231, 11%, 63%);
+}
+
+.backButton:hover {
+  color: rgb(49, 49, 49);
+}
+
+/* personal info page styles */
+.personalInfoPage {
+  margin-top: 50px;
+}
+
+.persolnalInfoPageDesc {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(231, 11%, 63%);
+  margin-bottom: 20px;
+}
+
+.inputLabel {
+  font-weight: 500;
+  font-size: 13px;
+  color: hsl(180, 1%, 31%);
+}
+
+.persolnalInfoText {
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+::placeholder {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(231, 11%, 63%)
+}
+
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  height: 40px;
+  margin-top: 30px;
+  background-color: hsl(240, 24%, 96%)
+}
+
+.toggleButton {
+  width: 50px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: hsl(240, 32%, 13%);
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.circle.leftPosition {
+  left: 30px;
+}
+
+/*select plan  styles*/
+.selectPlan {
+  display: flex;
+  gap: 15px;
+}
+
+.planCard {
+  border-radius: 7px;
+  height: auto;
+  width: 108px;
+  border: solid 1px hsl(229, 24%, 87%);
+  padding: 20px 0 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.planCard:hover {
+  border: solid 1px hsl(213, 96%, 18%);
+}
+.selectedPlan{
+  background-color: hsl(240, 24%, 96%);
+  border: solid 1px hsl(213, 96%, 18%);
+}
+.planImage {
+  width: 30px;
+  margin-bottom: 20px;
+}
+
+.planName {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.planPrice {
+  color: hsl(231, 11%, 63%);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.planFreeText {
+  font-size: 11px;
+  font-weight: 500;
+
+}
+
+.planDurationLabel {
+  font-weight: 700;
+  font-size: 13px;
+  color: hsl(231, 11%, 63%);
+}
+.selectedPlanDurationLabel{
+  color:hsl(213, 96%, 18%);
+}
+
+
+/*Add-ons page  styles*/
+.addOnsCard {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  width: 380px;
+  border: solid 1px hsl(231, 11%, 63%);
+  height: 70px;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 20px;
+}
+
+.addOnsCheckBox {
+  height: 15px;
+  width: 15px;
+  margin-top: 22px;
+}
+
+.addOnsDetails {
+ margin-left: -130px; 
+}
+
+.addOnName {
+  color: hsl(213, 96%, 18%);
+  font-size: 14px;
+}
+
+.addOnDesc {
+  color: hsl(231, 11%, 63%);
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.addOnPrice {
+  color: hsl(243, 100%, 62%);
+  font-size: 12px;
+  font-weight: 400;  
+}
+
+/*summary page styles*/
+.summaryPage {
+  width: 380px;
+  background-color: hsl(240, 24%, 96%);
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  border-radius: 5px;
+  ;
+}
+
+.grayLine {
+  border: solid 0.1px hsl(240, 5%, 88%);
+  width: 390px;
+  ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.changeLink {
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.changeLink:hover {
+  color: hsl(243, 100%, 62%)
+}
+
+.totalPriceSection,
+.summaryPageGrid,
+.summaryPlanInfo {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(231, 11%, 63%);
+  font-size: 12px;
+  font-weight: 400;
+  height: 40px;
+}
+.summaryPlanPrice{
+  padding-top: 10px;
+}
+.summaryPlanInfo {
+  height: 20px;
+  color: hsl(213, 96%, 18%);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.totalPriceSection {
+  width: 390px;
+  padding-top: 20px;
+  padding-left: 15px;    
+}
+
+.summaryAddOnPrice {
+  color: hsl(213, 96%, 18%);
+  font-weight: 500;
+}
+
+.summaryTotalPrice {
+  color: hsl(243, 100%, 62%);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* thankYou page*/
+.thankYou {
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 180px;
+  margin-left: 50px;
+}
+
+.thankYouText {
+  font-size: 25px;
+  height: 25px;
+}
+
+.thankYouImg {
+  width: 60px;
+  padding-bottom: 15px;
+}
+
+.thankYouDesc {
+  color: hsl(231, 11%, 63%);
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 22px;
+}
